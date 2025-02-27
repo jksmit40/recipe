@@ -1,3 +1,40 @@
+/* root variables */
+:root {
+    font-family: "Montserrat", serif;
+    --babyblue:rgba(122, 191, 191, .5);
+    --teal: #7ABFBF;
+    --Black: #0d0d0d;
+    --white: #f2f2f2;
+    --orange: #EB5428;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0px;
+    font-family: 'Montserrat';
+    /* outline: 1px solid red; */
+}
+
+html {
+    background-color: rgb(122, 191, 191, .5);
+
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: #f2f2f2;
+    padding: 35px 5px 0 5px;
+    max-width: 450px;
+}
+
+section {
+    max-width: 414px;
+}
+
+
 nav {
     grid-area: nav;
     min-width: 414px;
@@ -55,4 +92,30 @@ nav h2 {
     visibility: hidden;
     height: 1px;
     width: 1px;
+}
+
+#hero_img {
+    max-width: 414px;
+}
+
+#chef {
+    max-width: 414px;
+}
+
+form {
+    margin: 30px 10% 15px 10%;
+    padding: 0;
+    display: inline-block;
+}
+
+form input {
+    height: 40px;
+    border:2px solid #EB5428;
+}
+
+form svg {
+    position: relative;
+    top: 15px;
+    right: 4px;
+    background-color:#EB5428;
 }

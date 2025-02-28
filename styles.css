@@ -26,8 +26,16 @@ body {
     display: grid;
     place-items: center;
     background-color: #f2f2f2;
-    padding: 35px 5px 0 5px;
+    padding: 50px 5px 0 5px;
     max-width: 450px;
+}
+
+h1, h2, h3, nav a, nav span, menu li, #social li, footer {
+    font-family: 'Bebas Neue'
+}
+
+p, dd, li, input, nav {
+    font-family: 'montserrat'
 }
 
 section {
@@ -37,12 +45,13 @@ section {
 
 nav {
     grid-area: nav;
-    min-width: 414px;
+    min-width: 450px;
     background-color: #ffffff;
     box-shadow: 0px 3px 3px #bbb;
     position: fixed;
     top: 0;
     z-index:5;
+    font-size: 20px;
 }
 nav ul {
     grid-area: hamberger;
@@ -51,6 +60,7 @@ nav ul {
     list-style: none;
     overflow: hidden;
     max-height: 0;
+    
 }
 nav li img {
     display: none;
@@ -94,8 +104,30 @@ nav h2 {
     width: 1px;
 }
 
+nav ul #logo {
+    background-color:#EB5428;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60%;
+    padding: 0 24%;
+}
+
+nav ul #sign-in {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 15px;
+    padding-bottom: 23px;
+}
+
+
 #hero_img {
-    max-width: 414px;
+    max-width: 450px;
+    position: relative;
+    right: 4.3%;
 }
 
 #chef {
@@ -119,3 +151,48 @@ form svg {
     right: 4px;
     background-color:#EB5428;
 }
+
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue';
+    padding-top: 3%;
+    font-size: 40px;
+}
+
+
+
+menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    gap: 5px;
+    padding: 12% 0 0 0;
+}
+
+menu li {
+    list-style: none;
+}
+
+menu li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'bebas neue';
+    font-size: 20px;
+    flex-wrap: nowrap;
+    color:#EB5428;
+    
+}
+
+menu li a svg {
+    position: relative;
+    transform: translateX(-90%);
+    top: -32px;
+}
+
+#jump {
+    transform: translateX(-170%);
+}
+
+
+

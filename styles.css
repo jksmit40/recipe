@@ -272,8 +272,27 @@ aside {
 
 .rice {
     display: grid;
-    grid-area: "img title"
-                "img comment"
-                "img rating";
-                
+    grid-template: "image title"
+                "image comment"
+                "image rating";
+}
+
+.rice h3 {
+    grid-area: title;
+}
+
+.rice p {
+    grid-area: comment;
+}
+
+.rice dl {
+    grid-area: rating;
+}
+
+.rice dd {
+    transform: none;
+}
+
+#rice_pic {
+    grid-area: image;
 }

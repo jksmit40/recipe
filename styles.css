@@ -266,7 +266,7 @@ dd {
 
 .list {
     background-color: #7ABFBF;
-    min-width: 450px;
+    width: 450px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -334,12 +334,12 @@ aside h2 {
 .rating svg {
     width: 18px;
     height: 18px;
-    fill: orange;
-    stroke: none;
+    fill:#EB5428;
+    stroke: 1px solid white;
 }
 
 .recipe:nth-child(4) {
-    padding-right: 100px;
+    padding-right: 65px;
 }
 
 .recipe:nth-child(5) {

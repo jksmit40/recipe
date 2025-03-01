@@ -26,8 +26,8 @@ body {
     display: grid;
     place-items: center;
     background-color: #f2f2f2;
-    padding: 50px 5px 0 5px;
     max-width: 450px;
+    padding-top: 50px;
 }
 
 h1, h2, h3, nav a, nav span, menu li, #social li, footer {
@@ -37,11 +37,6 @@ h1, h2, h3, nav a, nav span, menu li, #social li, footer {
 p, dd, li, input, nav {
     font-family: 'montserrat'
 }
-
-section {
-    max-width: 414px;
-}
-
 
 nav {
     grid-area: nav;
@@ -127,7 +122,7 @@ nav ul #sign-in {
 #hero_img {
     max-width: 450px;
     position: relative;
-    right: 4.3%;
+    right: 5px;
 }
 
 #chef {
@@ -194,5 +189,91 @@ menu li a svg {
     transform: translateX(-170%);
 }
 
+main {
+    line-height: 1.5;
+}
 
+main h3 {
+    text-align: center;
+    font-size: 25px;
+}
 
+main p {
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+section p:nth-of-type(2) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    max-width: 440px;
+    padding-top: 10px;
+}
+
+dt {
+    font-weight: bold;
+    
+}
+
+dd:nth-of-type(4) {
+   transform: translateX(-55%);
+}
+
+dd:nth-of-type(3) {
+    transform: translateX(-115%);
+}
+
+dd:last-of-type {
+    transform: translateX(-205%);
+}
+
+dd {
+    transform: translateX(-120%);
+}
+
+.taco_ingr {
+    padding: 20px 0 10px 10px;
+    line-height: 2;
+}
+
+.taco_ingr ul {
+    list-style-type: square;
+    padding-left: 20px;
+    
+}
+
+.taco_ingr ul li {
+    padding-left: 10px;
+}
+
+.taco_directions {
+    line-height: 1.5;
+}
+
+.taco_directions h3 {
+    padding-bottom: 10px;
+}
+
+.taco_directions ol li {
+    padding: 10px 5px;
+    margin-left: 25px;
+}
+
+aside {
+    background-color: #7ABFBF;
+    min-width: 450px;
+    display: grid;
+}
+
+.rice {
+    display: grid;
+    grid-area: "img title"
+                "img comment"
+                "img rating";
+                
+}

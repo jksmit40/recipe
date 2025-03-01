@@ -484,56 +484,8 @@ aside h2 {
     menu {
         padding-top: 50px;
         min-width: 768px;
-        background-color:
-        -moz-linear-gradient(
-        -72deg,
-        #dedede,
-        #ffffff 16%,
-        #dedede 21%,
-        #ffffff 24%,
-        #454545 27%,
-        #dedede 36%,
-        #ffffff 45%,
-        #ffffff 60%,
-        #dedede 72%,
-        #ffffff 80%,
-        #dedede 84%,
-        #a1a1a1
-      );
-      background:
-      -webkit-linear-gradient(
-        -72deg,
-        #dedede,
-        #ffffff 16%,
-        #dedede 21%,
-        #ffffff 24%,
-        #454545 27%,
-        #dedede 36%,
-        #ffffff 45%,
-        #ffffff 60%,
-        #dedede 72%,
-        #ffffff 80%,
-        #dedede 84%,
-        #a1a1a1
-      );
-      background:
-      -o-linear-gradient(
-        -72deg,
-        #dedede,
-        #ffffff 16%,
-        #dedede 21%,
-        #ffffff 24%,
-        #454545 27%,
-        #dedede 36%,
-        #ffffff 45%,
-        #ffffff 60%,
-        #dedede 72%,
-        #ffffff 80%,
-        #dedede 84%,
-        #a1a1a1
-      );
-      background:
-      linear-gradient(
+        background:
+        linear-gradient(
         -72deg,
         #dedede,
         #ffffff 16%,
@@ -635,4 +587,92 @@ aside h2 {
     }
 }
 
+@media screen and (min-width: 1280px) {
 
+    body {
+        padding-top: 75px;
+        max-width: 1280px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        position: fixed;
+        background-color: white;
+        max-width: 1280px;
+    }
+
+    nav ul li:first-of-type {
+        background-color:#EB5428;
+    }
+
+    nav ul li:last-of-type {
+        margin-left: 10px;
+    }
+    
+    nav li a {
+        transform: translateY(25px);
+        padding: 20px 10px 20px 10px;
+    }
+
+    nav li img {
+        translate: 60px -40px;
+    }
+
+    header, h1 {
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 10px;
+    }
+
+    main {
+        grid-template: "hero description"
+                        "Time Time"
+                        "Ingredients Direction";
+        min-width: 1280px;
+        gap: 15px;
+    }
+
+    #hero {
+        grid-area: hero;
+    }
+
+    .taco_time {
+        background-color:#0d0d0d;
+        color:#7ABFBF;
+    }
+
+    dl {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr .5fr;
+        min-width: 1280px;
+    }
+
+    dl dd {
+        grid-row: 2 / 3;
+    }
+
+    .list {
+        background-color: #7ABFBF;
+        width: 1280px;
+        display: grid;
+        grid-template: "header header header header"
+                        "rice salsa guac tort";
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .recipe {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe a img {
+        width: auto;
+        height: auto;
+    }
+
+}

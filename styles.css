@@ -601,7 +601,7 @@ aside h2 {
         padding: 0;
         position: fixed;
         background-color: white;
-        max-width: 1280px;
+        min-width: 1280px;
     }
 
     nav ul li:first-of-type {
@@ -627,6 +627,11 @@ aside h2 {
 
     h1 {
         padding-top: 10px;
+    }
+
+    menu {
+        background: white;
+        border: solid 1px #EB5428;
     }
 
     main {
@@ -673,6 +678,27 @@ aside h2 {
     .recipe a img {
         width: auto;
         height: auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template: "copyright connect";
+        min-width: 1280px;
+        padding-bottom: 0;
+    }
+
+    .social {
+        padding: 50px 25px 0 25px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        translate: 100px 40px;
+    }
+
+    .copyright div {
+        translate: 80px -180px;
+    }
+
+    #chef {
+        translate: -80px 50px;
     }
 
 }

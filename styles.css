@@ -39,7 +39,6 @@ p, dd, li, input, nav {
 }
 
 nav {
-    grid-area: nav;
     min-width: 450px;
     background-color: #ffffff;
     box-shadow: 0px 3px 3px #bbb;
@@ -49,7 +48,7 @@ nav {
     font-size: 20px;
 }
 nav ul {
-    grid-area: hamberger;
+    grid-column: 1 / 2;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -401,3 +400,239 @@ aside h2 {
     max-width: 250px;
     grid-row: 1 / 2;
 }
+
+@media screen and (min-width: 768px) { 
+
+    body {
+        padding-top: 150px;
+        max-width: 768px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        position: fixed;
+        background-color: white;
+        max-width: 768px;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        max-height: none;
+        overflow: visible;
+        flex-wrap: wrap;
+        
+    }
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    nav li img {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 5px;
+    }
+
+    nav li a {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: #EB5428;
+        font-weight: bold;
+    }
+
+    nav li #logo {
+        position: relative;
+        padding: 0;
+    }
+
+    nav ul #sign-in {
+        position: relative;
+        top: 0;
+        right: 20px;
+        transform: none;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+
+    header {
+        min-width: 768px;
+        padding-top: 15px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 15px;
+    }
+    
+    menu {
+        padding-top: 50px;
+        min-width: 768px;
+        background-color:
+        -moz-linear-gradient(
+        -72deg,
+        #dedede,
+        #ffffff 16%,
+        #dedede 21%,
+        #ffffff 24%,
+        #454545 27%,
+        #dedede 36%,
+        #ffffff 45%,
+        #ffffff 60%,
+        #dedede 72%,
+        #ffffff 80%,
+        #dedede 84%,
+        #a1a1a1
+      );
+      background:
+      -webkit-linear-gradient(
+        -72deg,
+        #dedede,
+        #ffffff 16%,
+        #dedede 21%,
+        #ffffff 24%,
+        #454545 27%,
+        #dedede 36%,
+        #ffffff 45%,
+        #ffffff 60%,
+        #dedede 72%,
+        #ffffff 80%,
+        #dedede 84%,
+        #a1a1a1
+      );
+      background:
+      -o-linear-gradient(
+        -72deg,
+        #dedede,
+        #ffffff 16%,
+        #dedede 21%,
+        #ffffff 24%,
+        #454545 27%,
+        #dedede 36%,
+        #ffffff 45%,
+        #ffffff 60%,
+        #dedede 72%,
+        #ffffff 80%,
+        #dedede 84%,
+        #a1a1a1
+      );
+      background:
+      linear-gradient(
+        -72deg,
+        #dedede,
+        #ffffff 16%,
+        #dedede 21%,
+        #ffffff 24%,
+        #454545 27%,
+        #dedede 36%,
+        #ffffff 45%,
+        #ffffff 60%,
+        #dedede 72%,
+        #ffffff 80%,
+        #dedede 84%,
+        #a1a1a1
+      );
+    }
+
+    #hero_img {
+        min-width: 768px;
+        max-width: 768px;
+    }
+
+    main {
+        max-width: 768px;
+        display: grid;
+        grid-template: "description description"
+                        "Time Time"
+                        "Ingredients Direction";
+    }
+
+    .taco_descrip {
+        grid-area: description;
+    }
+
+    .taco_time {
+        display: grid;
+        grid-area: Time;
+
+    }
+
+    .taco_ingr {
+        grid-area: Ingredients;
+    }
+
+    .taco_directions {
+        grid-area: Direction;
+    }
+
+    .taco_directions h3{
+        margin-top: 15px;
+        padding-bottom: 0px;
+    }
+
+    .taco_directions ol {
+        line-height: 2;
+    }
+
+    dl {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 768px;
+        padding-top: 10px;
+    }
+     
+     main .taco_time dl dd {
+         transform: translateX(0%);
+     }
+
+     .list {
+        background-color: #7ABFBF;
+        width: 768px;
+        display: grid;
+        grid-template: "header header"
+                        "rice salsa"
+                        "guac tort";
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .list h2 {
+        grid-area: header;
+    }
+    
+    footer {
+        display: grid;
+        grid-template: "copyright connect" 350px / .8fr 1.2fr;
+    }
+
+    .copyright {
+        grid-area: copyright;
+    }
+
+    .copyright img {
+        max-width: 200px;
+    }
+
+    .connect {
+        grid-area: connect;
+        transform: translateY(-140px)
+    }
+}
+
+

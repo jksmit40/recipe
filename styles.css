@@ -264,35 +264,84 @@ dd {
     margin-left: 25px;
 }
 
-aside {
+.list {
     background-color: #7ABFBF;
     min-width: 450px;
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-.rice {
+aside h2 {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.recipe {
     display: grid;
-    grid-template: "image title"
-                "image comment"
-                "image rating";
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+    align-items: start; 
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.rice h3 {
-    grid-area: title;
+.recipe h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.rice p {
-    grid-area: comment;
+.recipe p {
+    margin: 5px 0;
+    font-size: 14px;
 }
 
-.rice dl {
-    grid-area: rating;
+.recipe li {
+    list-style-type: none;
 }
 
-.rice dd {
-    transform: none;
+.recipe a img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-#rice_pic {
-    grid-area: image;
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.rating li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rating svg {
+    width: 18px;
+    height: 18px;
+    fill: orange;
+    stroke: none;
+}
+
+.recipe:nth-child(4) {
+    padding-right: 100px;
+}
+
+.recipe:nth-child(5) {
+    padding-right: 45px;
 }

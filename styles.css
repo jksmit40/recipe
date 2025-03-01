@@ -126,6 +126,7 @@ nav ul #sign-in {
 form {
     margin: 30px 10% 15px 10%;
     padding: 0;
+    padding-left: 58px;
     display: inline-block;
 }
 
